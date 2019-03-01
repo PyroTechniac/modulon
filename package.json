@@ -6,6 +6,9 @@
   "repository": "https://github.com/github:PyroTechniac/modulon",
   "author": "Gryffon Bellish <owenbellish@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "node ./test/main.js"
+  },
   "dependencies": {
     "advancedjs": "^3.0.3",
     "discord.js": "discordjs/discord.js",
