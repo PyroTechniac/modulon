@@ -2,7 +2,7 @@
   "name": "modulon",
   "version": "0.0.1",
   "description": "A module-based framework for discord.js",
-  "main": "./src/index.js",
+  "main": "./src/index",
   "repository": "https://github.com/github:PyroTechniac/modulon",
   "author": "Gryffon Bellish <owenbellish@gmail.com>",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "fs-nextra": "^0.4.3"
   },
   "devDependencies": {
+    "@types/node": "^11.9.6",
     "eslint": "^5.14.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-standard": "^12.0.0",
@@ -25,5 +26,7 @@
     "jsdoc-to-markdown": "^4.0.1"
   },
   "optionalDependencies": {},
-  "peerDependencies": {}
+  "peerDependencies": {
+    "discord.js": "discordjs/discord.js"
+  }
 }

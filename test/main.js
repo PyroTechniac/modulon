@@ -1,4 +1,5 @@
-const Module = require('../');
-const cli = new Module.ModuleClient();
-console.log(cli.modules.directory);
-process.exit();
+const { ModuleClient } = require('../src/index');
+const cli = new ModuleClient();
+cli.loadAll();
+cli.on('debug', message => console.log(message));
+process.exit(0);
