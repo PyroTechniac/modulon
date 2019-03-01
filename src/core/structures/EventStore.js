@@ -16,6 +16,7 @@ class EventStore extends ModuleStore {
                 if (event.enabled) {
                     this.client.emit('debug', `Loaded event ${event.name}`);
                     this.set(event.name, event);
+                    this.client['on'](event.name, event._execute);
                 }
             });
             return this;

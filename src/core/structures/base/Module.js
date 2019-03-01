@@ -12,7 +12,7 @@ class Module {
 
         this.type = type;
 
-        this.execute = info.execute.bind(this) || this.default;
+        this.execute = info.execute ? info.execute.bind(this) : this.default.bind(this);
 
         Object.values(info).forEach(val => {
             if (typeof val === 'function') {
@@ -23,9 +23,15 @@ class Module {
         });
     }
     default() {
-        throw new CustomError(`The ${this.type} does not have an execute() method`, 'ModuleExecuteError');
+        throw new CustomError(`The ${this.type} ${this.name} does not have an execute() method`, 'ModuleExecuteError');
     }
-    _execute() { } // eslint-disable-line no-empty-function
+    _execute(...args) {
+        try {
+            this.execute(...args);
+        } catch (error) {
+            this.client.emit('error', error);
+        }
+    }
 }
 
 module.exports = Module;

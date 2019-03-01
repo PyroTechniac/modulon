@@ -16,8 +16,8 @@ class ModuleClient extends Discord.Client {
         this.commands = new CommandStore(this);
         this.events = new EventStore(this);
         this.stores
-            .add(this.commands)
-            .add(this.events);
+            .add(this.events)
+            .add(this.commands);
     }
 
     async login(token) {
@@ -28,9 +28,18 @@ class ModuleClient extends Discord.Client {
         // return super.login(token);
     }
     loadAll() {
-        this.stores.forEach(store => {
-            store.register();
+        this.stores.forEach(async store => {
+            try {
+                await store.register();
+            } catch (error) {
+                this.emit('error', error, store);
+            }
         });
+        this.emit('storesLoaded', this.stores);
+        return this;
+    }
+    loadCommands() {
+        this.commands.register();
         return this;
     }
 }
