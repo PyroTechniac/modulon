@@ -15,7 +15,7 @@
     "fs-nextra": "^0.4.3"
   },
   "devDependencies": {
-    "@types/node": "^11.9.6",
+    "@types/node": "^11.10.4",
     "eslint": "^5.14.1",
     "eslint-config-pyro": "pyrotechniac/pyro-lint",
     "jsdoc-to-markdown": "^4.0.1"
