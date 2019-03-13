@@ -33,10 +33,10 @@ acorn@^6.0.7:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.1.1.tgz#7d25ae05bb8ad1f9b699108e1094ecd7884adc1f"
   integrity sha512-jPTiwtOxaHNaAPg/dmrJ/beuzLRnXtB0kQPQ8JpotKJgTB6rX6c8mlf315941pyjBSaPg8NHXS9fhP4u17DpGA==
 
-advancedjs@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/advancedjs/-/advancedjs-3.0.3.tgz#7c5624fa80d1aeb3a76cbdc558bfd6df80384323"
-  integrity sha512-Hs71qOAnvP9DItWYq7ruW8HzYWllCmFz1IAwJRVBw4f5T9uuzjrWclunhvbgW8CH8dJlmgQN9+iwgZdUPBS58Q==
+advancedjs@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/advancedjs/-/advancedjs-3.1.0.tgz#f439638324eedef6e17bed176eadf9bbab77799f"
+  integrity sha512-EcE9N5xiZRPgoTZnlID+Twy60H/VTkoD3cGU8KD0vT4FyZOEXCLIm9gdsQm1Zf/Q4Vqq250rHvIaJDdVfm7eZA==
   dependencies:
     fs-nextra "^0.4.3"
     util "^0.11.1"
