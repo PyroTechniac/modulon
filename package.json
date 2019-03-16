@@ -12,7 +12,7 @@
   "dependencies": {
     "advancedjs": "^3.0.3",
     "discord.js": "discordjs/discord.js",
-    "fs-nextra": "^0.4.3"
+    "fs-nextra": "^0.4.4"
   },
   "devDependencies": {
     "@types/node": "^11.11.0",
