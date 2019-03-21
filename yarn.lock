@@ -365,7 +365,8 @@ escape-string-regexp@^1.0.5, escape-string-regexp@~1.0.5:
 
 eslint-config-pyro@pyrotechniac/pyro-lint:
   version "0.0.1"
-  resolved "https://codeload.github.com/pyrotechniac/pyro-lint/tar.gz/b26c17accbf720bb98a3c4e8527502607ee040e0"
+  uid a599ccd33ff11cff07c1e44baa62f39bf24edebb
+  resolved "https://codeload.github.com/pyrotechniac/pyro-lint/tar.gz/a599ccd33ff11cff07c1e44baa62f39bf24edebb"
 
 eslint-scope@^4.0.2:
   version "4.0.2"
